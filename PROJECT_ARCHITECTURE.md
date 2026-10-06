@@ -52,14 +52,14 @@ These checked-in guides provide the project’s detailed design, operational con
 | --- | --- | --- |
 | `GET /healthz` | `healthz` | [`src/abtest/main.py`](src/abtest/main.py#L10) |
 | `POST /analyze` | `post_analyze` | [`src/abtest/main.py`](src/abtest/main.py#L15) |
-| `GET /readyz` | `readyz` | [`src/abtest/ops.py`](src/abtest/ops.py#L44) |
-| `POST /workspaces` | `create_workspace` | [`src/abtest/ops.py`](src/abtest/ops.py#L49) |
-| `GET /workspaces` | `list_workspaces` | [`src/abtest/ops.py`](src/abtest/ops.py#L66) |
-| `POST /workspaces/{workspace_id}/jobs` | `create_job` | [`src/abtest/ops.py`](src/abtest/ops.py#L73) |
-| `GET /jobs/{job_id}` | `get_job` | [`src/abtest/ops.py`](src/abtest/ops.py#L96) |
-| `POST /jobs/{job_id}/approve` | `approve_job` | [`src/abtest/ops.py`](src/abtest/ops.py#L105) |
-| `GET /audit` | `audit` | [`src/abtest/ops.py`](src/abtest/ops.py#L122) |
-| `GET /metrics` | `metrics` | [`src/abtest/ops.py`](src/abtest/ops.py#L138) |
+| `GET /readyz` | `readyz` | [`src/abtest/ops.py`](src/abtest/ops.py#L74) |
+| `POST /workspaces` | `create_workspace` | [`src/abtest/ops.py`](src/abtest/ops.py#L80) |
+| `GET /workspaces` | `list_workspaces` | [`src/abtest/ops.py`](src/abtest/ops.py#L98) |
+| `POST /workspaces/{workspace_id}/jobs` | `create_job` | [`src/abtest/ops.py`](src/abtest/ops.py#L106) |
+| `GET /jobs/{job_id}` | `get_job` | [`src/abtest/ops.py`](src/abtest/ops.py#L130) |
+| `POST /jobs/{job_id}/approve` | `approve_job` | [`src/abtest/ops.py`](src/abtest/ops.py#L140) |
+| `GET /audit` | `audit` | [`src/abtest/ops.py`](src/abtest/ops.py#L160) |
+| `GET /metrics` | `metrics` | [`src/abtest/ops.py`](src/abtest/ops.py#L176) |
 
 The table lists literal route decorators found in the inspected Python modules. Router prefixes and middleware can add behavior; check the linked handler and application setup before calling an endpoint.
 
