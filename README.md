@@ -1,5 +1,12 @@
 # A/B Testing Platform
 
+## Overview
+
+An A/B test analyzer for conversion experiments. `POST /analyze` takes success counts for control and treatment, computes each conversion rate and the lift, and applies a z cutoff: when |z| is above 1.96 it names a winner, otherwise it reports none. A `/v1` ops API adds workspaces, tenant isolation, job approval and audit records.
+
+- **Built with:** Python, pytest, Docker, Docker Compose, GitHub Actions
+- **Scope:** Data science lab with tests; it calls no hosted model and refuses production apply.
+
 <!-- project-guide:start -->
 ## Project guide
 
